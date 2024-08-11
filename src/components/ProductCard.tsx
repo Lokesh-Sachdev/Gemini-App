@@ -2,7 +2,17 @@ import Link from "next/link";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
-const ProductCard = ({ Icon, heading, description, bgColor = "#18dc59" }) => {
+const ProductCard = ({
+  Icon,
+  heading,
+  description,
+  bgColor = "#18dc59",
+}: {
+  Icon: any;
+  heading: string;
+  description: string;
+  bgColor?: string;
+}) => {
   return (
     <div className=" flex flex-col items-center gap-2.5 py-12 px-7 text-center bg-[#f9fcff] transition-all hover:rounded hover:bg-white hover:shadow-[0 0 35px 0 rgba(0,0,0,0.05)] ">
       <span
